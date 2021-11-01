@@ -1,0 +1,7 @@
+rows= int(input("angka dan baris yang akan dimasukkan : "))
+for z in range(rows, 0,-1):
+    num = z
+    for y in range(0, z):
+        print(num, end=" ")
+    print()
+    z -= 1
