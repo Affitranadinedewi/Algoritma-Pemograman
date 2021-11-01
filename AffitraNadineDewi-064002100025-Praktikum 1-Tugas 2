@@ -1,0 +1,6 @@
+print(“Isi dengan Source Code”)
+panjang = int(input("masukan panjang : ")) 
+lebar = int(input("masukan lebar : "))  
+satuan = input("masukan satuan : ")
+luas = panjang * lebar 
+print(luas,satuan) 
