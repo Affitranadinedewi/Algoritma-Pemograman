@@ -1,0 +1,32 @@
+from math import sqrt
+
+print("--berikut mencari program persamaan kuadrat--")
+print("=====================================")
+x1 = float(input("masukan koefisien A = "))
+x2 = float(input("masukan koefisien B = "))
+x3 = float(input("masukan koefisien C = "))
+
+x4 = (x2**2) - (4*x1*x3)
+
+if x1 == 0:
+    print("Koefisien A tidak boleh sama dengan 0")
+else:
+    print(f"Persamaan Kuadrat {x1} x^2 + {x2}x + {x3}")
+    print(f"Determinan = {x4}")
+
+    if x4 < 0:
+        print("Merupakan Akar Imaginer")
+        print(f"Akar x1 = -{x2} + Akar {x4} / {x2} * {x1}")
+        print(f"Akar x2 = -{x2} - Akar {x4} / {x2} * {x1}")
+    elif x4 == 0:
+        a = -x2 / (2*x1)
+        b = a
+        print("Merupakan Akar Kembar")
+        print(f"Akar a = {a}")
+        print(f"Akar b = {b}")
+    elif x4 > 0:
+        a = (-x2 + sqrt(x4)) / (2*x1)
+        b = (-x2 - sqrt(x4)) / (2*x1)
+        print("Merupakan Akar Berbeda")
+        print(f"Akar a = {a}")
+        print(f"Akar b = {b}")
