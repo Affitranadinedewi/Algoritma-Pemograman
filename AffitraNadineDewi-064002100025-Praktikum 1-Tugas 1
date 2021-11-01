@@ -1,0 +1,7 @@
+print(“Isi dengan Source Code”)
+x = input("Nama kamu siapa ?") 
+print("nama saya adalah : ", x)  
+x1 = input("Darimana asal kamu?") 
+print("Asal saya dari",x1) 
+x2 = input("Sebelumnya bersekolah dimana?") 
+print("saya bersekolah di",x2) 
