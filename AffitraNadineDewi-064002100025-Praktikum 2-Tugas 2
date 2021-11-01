@@ -1,0 +1,26 @@
+@author: ID20072
+Nama : Affitra Nadine Dewi
+Nim  : 064002100025
+"""
+
+from math import sin, cos, atan2, radians, sqrt, ceil
+
+print("jarak kalkulator garis latitude/longitude")
+x1 = int(input("masukkan garis latitude 1 : "))
+x2 = int(input("masukkan garis latitude 2 : "))
+y1 = int(input("masukkan garis longitude 1 :   "))
+y2 = int(input("masukkan garis longitude 2 :   "))
+
+R = 6371
+x1, x2, y1, y2 = map(radians, [x1, x2, y1, y2])
+dx = x2 - x1
+dy = y2 - y1
+a = sin(dx/2)**2 + cos(x1) * cos(x2) * sin(dy/2)**2
+c = 2 * atan2(sqrt(a), sqrt(1-a))
+d = R * c
+
+print("-------------")
+
+print(f"jumlah jarak = {ceil(d)} km")
+
+print("--------------")
