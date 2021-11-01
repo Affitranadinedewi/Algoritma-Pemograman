@@ -1,0 +1,21 @@
+print(“Isi dengan Source Code 
+import math
+
+a = float(input("Masukkan nilai a: "))
+b = float(input("Masukkan nilai b: "))
+
+Hasil = a + b
+print("Jumlah a dan b: ", Hasil)
+Hasil = a - b
+print("Selisih antara b dengan a: ", abs(Hasil))
+Hasil = a * b
+print("Hasil kali a dan b: ", Hasil)
+Hasil = a % b
+print("Sisa pembagian a dengan b: ", Hasil)
+Hasil = a / b
+print("Pembagian a dengan b: ", Hasil)
+Hasil = math.log10(a)
+print("Hasil dari log(a) : ", Hasil)
+
+Hasil = a ** b
+print("a pangkat b: ", Hasil)
