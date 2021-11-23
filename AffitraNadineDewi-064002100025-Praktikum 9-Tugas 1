@@ -1,0 +1,32 @@
+Created on Tue Nov 23 18:11:18 2021
+
+@author: Affitra Nadine Dewi
+Nim : 064002100025
+"""
+
+def write(A):
+    file = open('file_biodata.txt', 'w')
+    file.write(str(A))
+    file.close()
+    
+def read():
+    file = open('file_biodata.txt','r')
+    print(file.read())
+    file.close()
+    
+A = str(input('input nama anda: '))
+B = str(input('input umur anda: '))
+C = str(input('input alamat anda: '))
+D = str(input('input email anda: '))
+E = str(input('input dosen wali anda: '))
+bio = str(f'''
+          
+nama = {A}
+umur = {B}
+alamat = {C}
+email = {D}
+dosen wali = {E}''')
+
+print('\ntulis data anda')
+write(bio)
+read()
