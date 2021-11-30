@@ -1,0 +1,32 @@
+Created on Tue Nov 30 10:00:14 2021
+
+@author: Affitra Nadine Dewi
+Nim : 064002100025
+"""
+
+title = str(input("Silahkan masukkan nama file:"))
+filename = (f"{title}.txt")
+f = open(filename, "w")
+f.close()
+print(f"FILE {filename} sudah dibuat ")
+print("Untuk berhenti Input A")
+
+def write(string):
+    file = open(f"{title}.txt","w")
+    file.write(str(string))
+    file.close()
+
+def read ():
+    file = open(f"{title}.txt", "r")
+    teks = file.read()
+    print(teks)
+
+x = True
+while x == True:
+    y = (input(""))
+    if y == "A":
+        print("\nteks sudah disimpan")
+        x = False
+    else:
+        write(y)
+        read()
