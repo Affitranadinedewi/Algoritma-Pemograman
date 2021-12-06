@@ -1,0 +1,36 @@
+@author: Affitra Nadine Dewi
+Nim : 064002100025
+"""
+
+class mahasiswa:
+
+    jumlah = 0
+
+    def _init_(self,nama,nim,tahun):
+        self.nama = str.upper(nama)
+        self.nim = str(nim)
+        self.tahun = str(tahun)
+        mahasiswa.jumlah += 1
+
+    def biodata(self):
+        return str(f'{self.nama} ; {self.nim} ; {self.tahun}')
+
+    def cetak(self):
+        print()
+        print('Nama mahasiswa:',self.nama)
+        print('NIM mahasiswa:',self.nim)
+        print('Tahun masuk:',self.tahun)
+        print()
+        input(f'Mahasiswa sekarang berjumlah {mahasiswa.jumlah} orang\nPRESS ENTER')
+
+
+while True:
+    print(f'\nMAHASISWA {(mahasiswa.jumlah)+1}\nuntuk mengakhiri ketik a!')
+    x = str(input('Nama mahasiswa: '))
+    if x == 'a':
+        break
+    y = str(input('NIM mahasiswa: '))
+    z = str(input('Tahun mahasiswa: '))
+    n = mahasiswa(x,y,z)
+
+    n.cetak()
