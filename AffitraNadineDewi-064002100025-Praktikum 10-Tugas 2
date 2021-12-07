@@ -1,0 +1,32 @@
+Created on Tue Dec  7 20:15:24 2021
+
+@author: Affitra Nadine Dewi
+NIM : 064002100025
+"""
+
+def bubbleSort(A):
+    count = 0
+    for idx in range(len(A)-1):
+        if A[idx] > A[idx + 1]:
+            A[idx],A[idx + 1] = A[idx + 1],A[idx]
+            count += 1
+    if count == 0:
+        return A
+    else:
+        bubbleSort(A)
+
+while True:
+    while True:
+        try:        
+            urutkan = str(input('ANGKA YANG DIMASUKKAN: (P,Q,R,...)\n>> ')).split(',')
+            urutkan = [int(i) for i in urutkan]
+        except:
+            print('\nError:\n* Syntax Error\n* Non Bilangan-Bulat')
+        else:
+            break
+    
+    print(f'\n\nList: {urutkan}')
+    
+    bubbleSort(urutkan)
+    
+    print(f'\n\nList*: {urutkan}')
